@@ -1,0 +1,7 @@
+# Test Property Validation
+
+# Invalid value for "ksm_selinux_mode" Property
+assertError --err_type "ValidationError" --err_property "ksm_selinux_mode" --err_message "Invalid value 'bogus'." create -t cobbler-service -p /ms/services/cobbler-test-fail -o ksm_selinux_mode="bogus"
+
+# Invalid value for "authentication" Property
+assertError --err_type "ValidationError" --err_property "authentication" --err_message "Invalid value 'bogus'." create -t cobbler-service -p /ms/services/cobbler-test-fail -o authentication="bogus"

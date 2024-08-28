@@ -1,0 +1,3 @@
+# create a cobbler-service with all defaults
+litp create -t cobbler-service -p /ms/services/cobbler
+
